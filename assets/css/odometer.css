@@ -3,6 +3,7 @@
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  font-size: 40px;
 }
 
 .odometer.odometer-auto-theme .odometer-digit,

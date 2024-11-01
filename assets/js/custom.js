@@ -774,18 +774,32 @@
      * 22. property tab
      * ======================================
      */
-
-    $(".property-tab-item").hide();
-    $(".property-tab-item:first").show();
-
-    $(".property-tab-btn").on("click", function () {
-      $(".property-tab-btn").removeClass("active");
-      $(this).addClass("active");
+    $(document).ready(function () {
+      // Initially hide all items and then show all by default for the "All" tab
       $(".property-tab-item").hide();
-      var target = $(this).data("target");
-      $(target).fadeIn(500);
-      return false;
-    });
+      $(".property-tab-item").show();
+  
+      // Click event for each tab button
+      $(".property-tab-btn").on("click", function () {
+          // Remove active class from all buttons and add it to the clicked one
+          $(".property-tab-btn").removeClass("active");
+          $(this).addClass("active");
+  
+          // Get the filter from data attribute
+          var filter = $(this).data("filter");
+  
+          // Show/hide items based on filter
+          if (filter === "all") {
+              $(".property-tab-item").fadeIn(500); // Show all items for "All" tab
+          } else {
+              $(".property-tab-item").hide(); // Hide all items first
+              $(".property-tab-item." + filter).fadeIn(500); // Show only the filtered items
+          }
+  
+          return false; // Prevent default action if used in anchor tag
+      });
+  });
+  
 
     /**
      * ======================================

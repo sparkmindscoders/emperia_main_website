@@ -10,7 +10,7 @@
       <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
       <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
       <!-- #title -->
-      <title>Gallery | Emperia  </title>
+      <title>Location Highlights | Emperia </title>
       <!-- #keywords -->
       <meta name="keywords" content="real estate, house listing, directory listing, html, bootstrap, scss">
       <!-- #description -->
@@ -22,11 +22,12 @@
          href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
          rel="stylesheet">
       <!-- color themes -->
-      <link rel="stylesheet" href="assets/css/orange-theme.css" id="switch-color">
+      <link rel="stylesheet" href="assets/css/blue-theme.css" id="switch-color">
       <!-- main css -->
       <link rel="stylesheet" href="assets/css/main.css">
       <!-- responsive css -->
       <link rel="stylesheet" href="assets/css/responsive.css">
+      <base href="http://localhost:5500/">
    </head>
    <body>
       
@@ -111,9 +112,12 @@
                                     </li>
                                     
                                     <li class="navbar__item navbar__item--has-children nav-fade">
-                                       <a href="#" aria-label="dropdown menu"
+                                       <a href="project.html" aria-label="dropdown menu"
                                           class="navbar__dropdown-label dropdown-label-alter">Projects</a>
                                        <ul class="navbar__sub-menu">
+                                          <li>
+                                             <a href="project.html">All Projects</a>
+                                          </li>
                                           <li>
                                              <a href="residental-properties.html">Residential Properties</a>
                                           </li>
@@ -246,14 +250,14 @@
                <div class="row">
                   <div class="col-12">
                      <div class="common-banner__inner">
-                        <h2 class="title-animation">Gallery</h2>
+                        <h2 class="title-animation">Location Highlights</h2>
                         <nav aria-label="breadcrumb">
                            <ol class="breadcrumb">
                               <li class="breadcrumb-item">
-                                 <a href="index.html">Home</a>
+                                 <a href="index-2.html">Home</a>
                               </li>
                               <li class="breadcrumb-item active" aria-current="page">
-                                Gallery 
+                                Location Highlights
                               </li>
                            </ol>
                         </nav>
@@ -263,21 +267,20 @@
             </div>
          </section>
          <!-- ==== / banner end ==== -->
-        
-         <!-- ==== explore section start ==== -->
-         <section class="explore">
+         <!-- ==== team section start ==== -->
+         <section class="team" id="oTeam">
             <div class="container">
                <div class="row justify-content-center">
                   <div class="col-12 col-xl-5">
                      <div class="section__header text-center">
-                        <span>Explore</span>
-                        <h2 class="title-animation">Gallery</h2>
+                        <span>Project </span>
+                        <h2 class="title-animation">Project Location Highlights</h2>
                         <div class="icon-thumb justify-content-center">
                            <div class="icon-thumb-single">
                               <span></span>
                               <span></span>
                            </div>
-                           <img src="assets/images/emperia/emperia-fav.png" style="max-height: 50px;" alt="Image" class="filter-img">
+                           <img src="assets/images/sub-icon.png" alt="Image" class="filter-img">
                            <div class="icon-thumb-single">
                               <span></span>
                               <span></span>
@@ -286,88 +289,179 @@
                      </div>
                   </div>
                </div>
-               <div class="row">
-                  <div class="col-12">
-                     <div class="explore__wrapper">
-                        <div class="explore__single g" data-aos="fade-up" data-aos-duration="1200">
+               <div class="row vertical-column-gap-lg">
+                  <div class="col-12 col-sm-6 col-xl-4">
+                     <div class="team__single" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="thumb-wrapper">
                            <div class="thumb">
-                              <a href="">
-                              <img src="assets/images/thumb/area/area-one.png" alt="Image">
-                              </a>
+                              <img src="assets/images/emperia/about1.png" alt="Image">
                            </div>
-                           <a href="" class="arr">
-                           <i class="fa-solid fa-arrow-up"></i>
-                           </a>
-                          
+                           <div class="thumb-hover">
+                              <div class="small-thumb">
+                                 <a href="team-details.html">
+                                 <img src="assets/images/team/one.png" alt="Image">
+                                 </a>
+                              </div>
+                              <p>Properties Agent</p>
+                              <div class="social">
+                                 <a href="https://www.facebook.com/" target="_blank"
+                                    aria-label="share us on facebook" title="facebook">
+                                 <i class="flaticon-facebook"></i>
+                                 </a>
+                                 <a href="https://www.twitter.com/" target="_blank"
+                                    aria-label="share us on twitter" title="twitter">
+                                 <i class="flaticon-twitter"></i>
+                                 </a>
+                                 <a href="https://www.instagram.com/" target="_blank"
+                                    aria-label="share us on instagram" title="instagram">
+                                 <i class="flaticon-instagram"></i>
+                                 </a>
+                                 <a href="https://www.linkedin.com/" target="_blank"
+                                    aria-label="share us on linkedin" title="linkedin">
+                                 <i class="flaticon-linkedin"></i>
+                                 </a>
+                              </div>
+                           </div>
+                           <a href="team-details.html" class="arr"><i class="flaticon-share"></i></a>
                         </div>
-                        <div class="explore__single g" data-aos="fade-up" data-aos-duration="1200"
-                           data-aos-delay="200">
-                           <div class="thumb">
-                              <a href="">
-                              <img src="assets/images/thumb/area/area-two.png" alt="Image">
-                              </a>
-                           </div>
-                           <a href="" class="arr">
-                           <i class="fa-solid fa-arrow-up"></i>
-                           </a>
-                           
+                        <div class="content">
+                           <span>Sunshine</span>
+                           <h4><a href="team-details.html">Andren Willium</a></h4>
+                           <p><a href="tel:256-255-6579"><i class="icon-mobile"></i> Call: +256 255 6579</a></p>
+                           <p>09 Properties</p>
                         </div>
-                        <div class="explore__single explore__single-tall g" data-aos="fade-up" data-aos-duration="1200"
-                           data-aos-delay="400">
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-4">
+                     <div class="team__single" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="thumb-wrapper">
                            <div class="thumb">
-                              <a href="">
-                              <img src="assets/images/thumb/area/area-four.png" alt="Image">
-                              </a>
+                              <img src="assets/images/emperia/about2.png" alt="Image">
                            </div>
-                           <a href="" class="arr">
-                           <i class="fa-solid fa-arrow-up"></i>
-                           </a>
-                           
+                           <div class="thumb-hover">
+                              <!-- <div class="small-thumb">
+                                 <a href="team-details.html">
+                                 <img src="assets/images/team/two.png" alt="Image">
+                                 </a>
+                              </div> -->
+                              <p>Project Highlights</p>
+                              <div class="project-content">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quod.</li>
+                                </ul>
+                              </div>
+                           </div>
+                           <a href="team-details.html" class="arr"><i class="flaticon-share"></i></a>
                         </div>
-                        <div class="explore__single explore__single-wide g" data-aos="fade-up" data-aos-duration="1200"
-                           data-aos-delay="600">
-                           <div class="thumb">
-                              <a href="">
-                              <img src="assets/images/thumb/area/area-three.png" alt="Image">
+                        <div class="content">
+                           <span>Sweet Home</span>
+                           <h4><a href="team-details.html">Polly Matzinger
                               </a>
-                           </div>
-                           <a href="" class="arr">
-                           <i class="fa-solid fa-arrow-up"></i>
-                           </a>
-                         
+                           </h4>
+                           <p><a href="tel:256-255-6579"><i class="icon-mobile"></i> Call: +256 255 6579</a></p>
+                           <p>19 Properties</p>
                         </div>
-                        <div class="explore__single g" data-aos="fade-up" data-aos-duration="1200"
-                           data-aos-delay="600">
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-4">
+                     <div class="team__single" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                        <div class="thumb-wrapper">
                            <div class="thumb">
-                              <a href="">
-                              <img src="assets/images/thumb/area/area-five.png" alt="Image">
-                              </a>
+                              <img src="assets/images/emperia/about1.png" alt="Image">
                            </div>
-                           <a href="" class="arr">
-                           <i class="fa-solid fa-arrow-up"></i>
-                           </a>
-                           
+                           <div class="thumb-hover">
+                              <div class="small-thumb">
+                                 <a href="team-details.html">
+                                 <img src="assets/images/team/three.png" alt="Image">
+                                 </a>
+                              </div>
+                              <p>Properties Agent</p>
+                              <div class="social">
+                                 <a href="https://www.facebook.com/" target="_blank"
+                                    aria-label="share us on facebook" title="facebook">
+                                 <i class="flaticon-facebook"></i>
+                                 </a>
+                                 <a href="https://www.twitter.com/" target="_blank"
+                                    aria-label="share us on twitter" title="twitter">
+                                 <i class="flaticon-twitter"></i>
+                                 </a>
+                                 <a href="https://www.instagram.com/" target="_blank"
+                                    aria-label="share us on instagram" title="instagram">
+                                 <i class="flaticon-instagram"></i>
+                                 </a>
+                                 <a href="https://www.linkedin.com/" target="_blank"
+                                    aria-label="share us on linkedin" title="linkedin">
+                                 <i class="flaticon-linkedin"></i>
+                                 </a>
+                              </div>
+                           </div>
+                           <a href="team-details.html" class="arr"><i class="flaticon-share"></i></a>
                         </div>
-                        <div class="explore__single g explore__single-wide" data-aos="fade-up" data-aos-duration="1200"
-                           data-aos-delay="800">
-                           <div class="thumb">
-                              <a href="">
-                              <img src="assets/images/thumb/area/area-six.png" alt="Image">
+                        <div class="content">
+                           <span>Eco Builders</span>
+                           <h4><a href="team-details.html">Thomas Stewart
                               </a>
+                           </h4>
+                           <p><a href="tel:256-255-6579"><i class="icon-mobile"></i> Call: +256 255 6579</a></p>
+                           <p>05 Properties</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-4">
+                     <div class="team__single" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="thumb-wrapper">
+                           <div class="thumb">
+                              <img src="assets/images/emperia/about3.png" alt="Image">
                            </div>
-                           <a href="" class="arr">
-                           <i class="fa-solid fa-arrow-up"></i>
-                           </a>
-                          
+                           <div class="thumb-hover">
+                              <div class="small-thumb">
+                                 <a href="team-details.html">
+                                 <img src="assets/images/team/four.png" alt="Image">
+                                 </a>
+                              </div>
+                              <p>Properties Agent</p>
+                              <div class="social">
+                                 <a href="https://www.facebook.com/" target="_blank"
+                                    aria-label="share us on facebook" title="facebook">
+                                 <i class="flaticon-facebook"></i>
+                                 </a>
+                                 <a href="https://www.twitter.com/" target="_blank"
+                                    aria-label="share us on twitter" title="twitter">
+                                 <i class="flaticon-twitter"></i>
+                                 </a>
+                                 <a href="https://www.instagram.com/" target="_blank"
+                                    aria-label="share us on instagram" title="instagram">
+                                 <i class="flaticon-instagram"></i>
+                                 </a>
+                                 <a href="https://www.linkedin.com/" target="_blank"
+                                    aria-label="share us on linkedin" title="linkedin">
+                                 <i class="flaticon-linkedin"></i>
+                                 </a>
+                              </div>
+                           </div>
+                           <a href="team-details.html" class="arr"><i class="flaticon-share"></i></a>
+                        </div>
+                        <div class="content">
+                           <span>EMark Street</span>
+                           <h4><a href="team-details.html">Cathy Decosta
+                              </a>
+                           </h4>
+                           <p><a href="tel:256-255-6579"><i class="icon-mobile"></i> Call: +256 255 6579</a></p>
+                           <p>22 Properties</p>
                         </div>
                      </div>
                   </div>
                </div>
-               
             </div>
          </section>
-         <!-- ==== / explore section end ==== -->
-        
+         <!-- ==== / team section end ==== -->
       
          
         
@@ -597,6 +691,7 @@
       </div>
       <!-- ==== js dependencies start ==== -->
 
+      
 
       <!-- jquery -->
       <script src="assets/js/jquery-3.7.1.min.js"></script>
