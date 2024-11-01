@@ -501,6 +501,7 @@
      * 13. nice select
      * ======================================
      */
+    $('select').niceSelect('destroy'); 
     $("select").niceSelect();
 
     /**

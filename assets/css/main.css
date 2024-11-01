@@ -3618,6 +3618,7 @@ body {
 }
 .search-property__wrapper .nice-select .list {
   width: 100%;
+  z-index: 99;
 }
 .search-property__wrapper form {
   width: 100%;
@@ -11865,6 +11866,24 @@ padding: 0px 10px;
 }
 
 
+.input-group .nice-select {
+  width: 100%;
+  padding: 9px 40px 9px 20px;
+  border-radius: 0px;
+  border: 1px solid #dddddd;
+  border-right: 0px;
+}
+.input-group .nice-select::after {
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  margin-top: -8px;
+  border-color: #999999;
+}
+.input-group .nice-select .list {
+  width: 100%;
+  z-index: 99 !important;
+}
 
 
 
