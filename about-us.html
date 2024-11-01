@@ -626,6 +626,136 @@
 
          
        
+
+         <section class="milestone-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section__header text-center">
+                            <span>Milestones</span>
+                            <h2 class="title-animation">Our Journey So Far</h2>
+                            <div class="icon-thumb justify-content-center">
+                                <div class="icon-thumb-single">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="assets/images/emperia/emperia-fav.png" style="max-height: 50px;" alt="Image" class="filter-img">
+                                <div class="icon-thumb-single">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Year Range Filter Tabs -->
+                <div class="year-filter d-flex justify-content-center my-4  ">
+                    <button class="year-btn active" onclick="filterMilestone('2013-14')">2013-14</button>
+                    <button class="year-btn" onclick="filterMilestone('2015-16')">2015-16</button>
+                    <button class="year-btn" onclick="filterMilestone('2017')">2017</button>
+                    <button class="year-btn" onclick="filterMilestone('2021-22')">2021-22</button>
+                </div>
+        
+                <!-- Milestone Items -->
+                <div class="milestone-items d-flex justify-content-around flex-wrap">
+                    <!-- Milestones for 2013-14 -->
+                    <div class="milestone-item" data-year="2013-14">
+                        <div class="milestone-image">
+                            <img src="assets/images/milestones/Emperia-milestone.png" alt="Milestone Image 2013-14">
+                        </div>
+                        <div class="milestone-content-card">
+                            <div class="milestone-content">
+                                <h3>2013</h3>
+                                <p>Started Emperia's journey towards success.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="milestone-item" data-year="2013-14">
+                        <div class="milestone-image">
+                            <img src="assets/images/milestones/evora.png" alt="Milestone Image 2014">
+                        </div>
+                        <div class="milestone-content-card">
+                            <div class="milestone-content">
+                                <h3>2014</h3>
+                                <p>Laid the foundation for the first project - Evvora.<br><br></p>
+                                <p>Forayed into Mumbai and executed third-party projects with big builders.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Milestones for 2015-16 -->
+                    <div class="milestone-item" data-year="2015-16">
+                        <div class="milestone-image">
+                            <img src="assets/images/milestones/diva-antilia.png" alt="Milestone Image 2015">
+                        </div>
+                        <div class="milestone-content-card">
+                            <div class="milestone-content">
+                                <h3>2015</h3>
+                                <p>Project Completed – Emperia Garden and Diva Antilia in Panvel.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="milestone-item" data-year="2015-16">
+                        <div class="milestone-image">
+                            <img src="assets/images/milestones/akshar-rivergate.png" alt="Milestone Image 2016">
+                        </div>
+                        <div class="milestone-content-card">
+                            <div class="milestone-content">
+                                <h3>2016</h3>
+                                <p>Ongoing Project – Emperia Akshar Rivergate in Rasayani Panvel.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Milestones for 2017 -->
+                    <div class="milestone-item" data-year="2017">
+                        <div class="milestone-image">
+                            <img src="assets/images/milestones/suncity.png" alt="Milestone Image 2017">
+                        </div>
+                        <div class="milestone-content-card">
+                            <div class="milestone-content">
+                                <h3>2017</h3>
+                                <p>Ongoing Projects - Gurukrupa Heights, Happy Homes and Sun City in Rasayani Panvel.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Milestones for 2021-22 -->
+                    <div class="milestone-item" data-year="2021-22">
+                        <div class="milestone-image">
+                            <img src="assets/images/milestones/vinayak-greens.png" alt="Milestone Image 2021">
+                        </div>
+                        <div class="milestone-content-card">
+                            <div class="milestone-content">
+                                <h3>2021</h3>
+                                <p>Ongoing Projects - Emperia Icon in Nerul, Vinayak Greens in Rasayani Panvel and Gurukrupa One in Panvel.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="milestone-item" data-year="2021-22">
+                        <div class="milestone-image">
+                            <img src="assets/images/milestones/emperia-park.png" alt="Milestone Image 2022">
+                        </div>
+                        <div class="milestone-content-card">
+                            <div class="milestone-content">
+                                <h3>2022</h3>
+                                <p>Ongoing projects – Emperia Hotel, Emperia Park, Emperia Arham, Emperia Vandana Heights.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+
+
          <!-- ==== collection section start ==== -->
          <!-- <section class="collection">
             <div class="container">
@@ -1079,6 +1209,70 @@ flipCards.forEach(card => {
       <script src="assets/js/color-settings.js"></script>
       <!-- main js -->
       <script src="assets/js/custom.js"></script>
+
+
+
+
+      <script>function filterMilestone(year) {
+         const items = document.querySelectorAll('.milestone-item');
+         const buttons = document.querySelectorAll('.year-btn');
+     
+         // Update active button
+         buttons.forEach(btn => btn.classList.remove('active'));
+         document.querySelector(`.year-btn[onclick="filterMilestone('${year}')"]`).classList.add('active');
+     
+         // Show or hide milestone items based on year
+         items.forEach(item => {
+             if (year === 'all' || item.getAttribute('data-year') === year) {
+                 item.style.display = 'block';
+             } else {
+                 item.style.display = 'none';
+             }
+         });
+     }
+     
+     // Initialize with the first year as active
+     filterMilestone('2013-14');
+     </script>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+       let filterButtons = document.querySelectorAll(".year-btn");
+       let currentFilterIndex = 0;
+       const filterInterval = 5000; // Time interval in milliseconds (5 seconds)
+
+       function filterMilestone(year) {
+           // Hide all milestone items
+           document.querySelectorAll(".milestone-item").forEach(item => {
+               item.style.display = 'none';
+           });
+
+           // Show milestone items matching the selected year
+           document.querySelectorAll(`.milestone-item[data-year="${year}"]`).forEach(item => {
+               item.style.display = 'block';
+           });
+
+           // Update active button styling
+           filterButtons.forEach(button => button.classList.remove("active"));
+           document.querySelector(`.year-btn[onclick="filterMilestone('${year}')"]`).classList.add("active");
+       }
+
+       function autoSlideFilters() {
+           filterMilestone(filterButtons[currentFilterIndex].getAttribute("onclick").match(/'(.*?)'/)[1]);
+           currentFilterIndex = (currentFilterIndex + 1) % filterButtons.length;
+       }
+
+       // Initialize with the first filter
+       filterMilestone(filterButtons[0].getAttribute("onclick").match(/'(.*?)'/)[1]);
+
+       // Set interval to automatically slide through filters
+       setInterval(autoSlideFilters, filterInterval);
+   });
+</script>
+
+
+
+
    </body>
 
 </html>
