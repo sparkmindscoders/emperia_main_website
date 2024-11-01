@@ -650,7 +650,7 @@
                 </div>
         
                 <!-- Year Range Filter Tabs -->
-                <div class="year-filter d-flex justify-content-center my-4 pt-5 pb-5">
+                <div class="year-filter d-flex justify-content-center my-4  ">
                     <button class="year-btn active" onclick="filterMilestone('2013-14')">2013-14</button>
                     <button class="year-btn" onclick="filterMilestone('2015-16')">2015-16</button>
                     <button class="year-btn" onclick="filterMilestone('2017')">2017</button>
@@ -662,7 +662,7 @@
                     <!-- Milestones for 2013-14 -->
                     <div class="milestone-item" data-year="2013-14">
                         <div class="milestone-image">
-                            <img src="assets/images/banner/banner-one.png" alt="Milestone Image 2013-14">
+                            <img src="assets/images/milestones/Emperia-milestone.png" alt="Milestone Image 2013-14">
                         </div>
                         <div class="milestone-content-card">
                             <div class="milestone-content">
@@ -674,12 +674,12 @@
         
                     <div class="milestone-item" data-year="2013-14">
                         <div class="milestone-image">
-                            <img src="assets/images/banner/banner-one.png" alt="Milestone Image 2014">
+                            <img src="assets/images/milestones/evora.png" alt="Milestone Image 2014">
                         </div>
                         <div class="milestone-content-card">
                             <div class="milestone-content">
                                 <h3>2014</h3>
-                                <p>Laid the foundation for the first project - Evvora.</p>
+                                <p>Laid the foundation for the first project - Evvora.<br><br></p>
                                 <p>Forayed into Mumbai and executed third-party projects with big builders.</p>
                             </div>
                         </div>
@@ -688,24 +688,24 @@
                     <!-- Milestones for 2015-16 -->
                     <div class="milestone-item" data-year="2015-16">
                         <div class="milestone-image">
-                            <img src="assets/images/banner/banner-one.png" alt="Milestone Image 2015">
+                            <img src="assets/images/milestones/diva-antilia.png" alt="Milestone Image 2015">
                         </div>
                         <div class="milestone-content-card">
                             <div class="milestone-content">
                                 <h3>2015</h3>
-                                <p>Expanded operations in multiple regions and built strategic partnerships with key players in the industry.</p>
+                                <p>Project Completed – Emperia Garden and Diva Antilia in Panvel.</p>
                             </div>
                         </div>
                     </div>
         
                     <div class="milestone-item" data-year="2015-16">
                         <div class="milestone-image">
-                            <img src="assets/images/banner/banner-one.png" alt="Milestone Image 2016">
+                            <img src="assets/images/milestones/akshar-rivergate.png" alt="Milestone Image 2016">
                         </div>
                         <div class="milestone-content-card">
                             <div class="milestone-content">
                                 <h3>2016</h3>
-                                <p>Completed first major residential project with outstanding success and customer satisfaction.</p>
+                                <p>Ongoing Project – Emperia Akshar Rivergate in Rasayani Panvel.</p>
                             </div>
                         </div>
                     </div>
@@ -713,12 +713,12 @@
                     <!-- Milestones for 2017 -->
                     <div class="milestone-item" data-year="2017">
                         <div class="milestone-image">
-                            <img src="assets/images/banner/banner-one.png" alt="Milestone Image 2017">
+                            <img src="assets/images/milestones/suncity.png" alt="Milestone Image 2017">
                         </div>
                         <div class="milestone-content-card">
                             <div class="milestone-content">
                                 <h3>2017</h3>
-                                <p>Secured large-scale projects and ventured into commercial real estate, solidifying market presence.</p>
+                                <p>Ongoing Projects - Gurukrupa Heights, Happy Homes and Sun City in Rasayani Panvel.</p>
                             </div>
                         </div>
                     </div>
@@ -726,24 +726,24 @@
                     <!-- Milestones for 2021-22 -->
                     <div class="milestone-item" data-year="2021-22">
                         <div class="milestone-image">
-                            <img src="assets/images/banner/banner-one.png" alt="Milestone Image 2021">
+                            <img src="assets/images/milestones/vinayak-greens.png" alt="Milestone Image 2021">
                         </div>
                         <div class="milestone-content-card">
                             <div class="milestone-content">
                                 <h3>2021</h3>
-                                <p>Launched new digital platforms for customer engagement, enhancing the client experience and accessibility.</p>
+                                <p>Ongoing Projects - Emperia Icon in Nerul, Vinayak Greens in Rasayani Panvel and Gurukrupa One in Panvel.</p>
                             </div>
                         </div>
                     </div>
         
                     <div class="milestone-item" data-year="2021-22">
                         <div class="milestone-image">
-                            <img src="assets/images/banner/banner-one.png" alt="Milestone Image 2022">
+                            <img src="assets/images/milestones/emperia-park.png" alt="Milestone Image 2022">
                         </div>
                         <div class="milestone-content-card">
                             <div class="milestone-content">
                                 <h3>2022</h3>
-                                <p>Achieved major financial milestones and recognized as a top industry player with numerous awards.</p>
+                                <p>Ongoing projects – Emperia Hotel, Emperia Park, Emperia Arham, Emperia Vandana Heights.</p>
                             </div>
                         </div>
                     </div>
@@ -1234,6 +1234,45 @@ flipCards.forEach(card => {
      // Initialize with the first year as active
      filterMilestone('2013-14');
      </script>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+       let filterButtons = document.querySelectorAll(".year-btn");
+       let currentFilterIndex = 0;
+       const filterInterval = 5000; // Time interval in milliseconds (5 seconds)
+
+       function filterMilestone(year) {
+           // Hide all milestone items
+           document.querySelectorAll(".milestone-item").forEach(item => {
+               item.style.display = 'none';
+           });
+
+           // Show milestone items matching the selected year
+           document.querySelectorAll(`.milestone-item[data-year="${year}"]`).forEach(item => {
+               item.style.display = 'block';
+           });
+
+           // Update active button styling
+           filterButtons.forEach(button => button.classList.remove("active"));
+           document.querySelector(`.year-btn[onclick="filterMilestone('${year}')"]`).classList.add("active");
+       }
+
+       function autoSlideFilters() {
+           filterMilestone(filterButtons[currentFilterIndex].getAttribute("onclick").match(/'(.*?)'/)[1]);
+           currentFilterIndex = (currentFilterIndex + 1) % filterButtons.length;
+       }
+
+       // Initialize with the first filter
+       filterMilestone(filterButtons[0].getAttribute("onclick").match(/'(.*?)'/)[1]);
+
+       // Set interval to automatically slide through filters
+       setInterval(autoSlideFilters, filterInterval);
+   });
+</script>
+
+
+
+
    </body>
 
 </html>
