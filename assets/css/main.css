@@ -7902,6 +7902,7 @@ body {
 }
 .blog .blog__single .blog-meta p i {
   font-size: 20px;
+  color: var(--orange-theme);
 }
 .blog .blog__single h4 {
   color: var(--quaternary-color);
