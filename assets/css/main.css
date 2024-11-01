@@ -2315,7 +2315,7 @@ body {
   overflow: clip !important;
   position: relative;
   z-index: 1;
-  height: 90vh;
+  height: 85vh;
   width: 100%;
 }
 .banner-two .shape-one {
@@ -2603,7 +2603,7 @@ body {
 }
 .banner-two .swiper-button-prev img,
 .banner-two .swiper-button-next img {
-  width: 140px;
+  width: 100px;
   height: 70px;
 }
 .banner-two .swiper-button-prev::after,
