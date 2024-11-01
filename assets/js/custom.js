@@ -501,6 +501,7 @@
      * 13. nice select
      * ======================================
      */
+    $('select').niceSelect('destroy'); 
     $("select").niceSelect();
 
     /**
@@ -787,6 +788,8 @@
   
           // Get the filter from data attribute
           var filter = $(this).data("filter");
+          console.log(filter);
+          
   
           // Show/hide items based on filter
           if (filter === "all") {
@@ -799,6 +802,36 @@
           return false; // Prevent default action if used in anchor tag
       });
   });
+    /**
+     * ======================================
+     * 22. project tab
+     * ======================================
+     */
+    $(document).ready(function () {
+      // Initially show all items by default
+      $(".project-tab-item").show();
+   
+      // Click event for each tab button
+      $(".project-tab-btn").on("click", function () {
+         // Remove active class from all buttons and add it to the clicked one
+         $(".project-tab-btn").removeClass("active");
+         $(this).addClass("active");
+   
+         // Get the filter from data attribute
+         var filter = $(this).data("filter");
+   
+         // Show/hide items based on filter
+         if (filter === "all") {
+            $(".project-tab-item").fadeIn(500); // Show all items for "All" tab
+         } else {
+            $(".project-tab-item").hide(); // Hide all items first
+            $("." + filter).fadeIn(500); // Show only the filtered items
+         }
+   
+         return false; // Prevent default action if used in anchor tag
+      });
+   });
+   
   
 
     /**
