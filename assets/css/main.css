@@ -11552,7 +11552,7 @@ body {
 
 /* Filter Button Styling */
 .btn-secondary {
-  background-color: #f1f1f1; /* Light gray background */
+  background-color: #ddd; /* Light gray background */
   color: #333; /* Dark text color */
   padding: 10px 20px;
   border: 2px solid transparent;
