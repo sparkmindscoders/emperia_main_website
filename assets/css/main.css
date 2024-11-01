@@ -11207,5 +11207,197 @@ div {
   border: 5px solid #ff9600;
   
   border-radius: 10px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px black;
+}
+
+
+
+
+
+.filter-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+.explore__single {
+  display: inline-block; /* Ensure items stay inline */
+}
+
+.hidden {
+  display: none; /* Class to hide elements */
+}
+
+
+
+
+
+
+
+
+.filter-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+.explore__single {
+  display: inline-block; /* Ensure items stay inline */
+}
+
+.hidden {
+  display: none; /* Class to hide elements */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery-item {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Base styles for the filter container */
+.filter-tabs {
+  position: relative;
+  border-bottom: 2px solid #ddd; /* Divider line for tab style */
+}
+
+/* Styling each filter button */
+.filter-btn {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-btn:hover {
+  color: #007bff; /* Hover color for each button */
+}
+
+/* Active button style */
+.filter-btn.active {
+  color: #007bff;
+}
+
+/* Sliding underline effect */
+.filter-tabs::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #007bff; /* Underline color */
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+/* Active button with underline positioning */
+.filter-btn.active::after {
+  width: 100%;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container Styling */
+.d-flex.justify-content-center.my-4 {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Filter Button Styling */
+.btn-secondary {
+  background-color: #f1f1f1; /* Light gray background */
+  color: #333; /* Dark text color */
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 30px; /* Rounded pill shape */
+  font-weight: 600;
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-secondary:hover {
+  background-color: #ffb347; /* Hover color */
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Active Button Styling */
+.btn-secondary.active {
+  background-color: #ffb347; /* Primary color when active */
+  color: #fff;
+  border-color: #007bff;
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.5); /* Slightly stronger shadow */
+}
+
+/* Transition for smooth effect when switching tabs */
+.btn-secondary:not(.active):hover {
+  transform: translateY(-2px); /* Lift effect on hover */
 }
