@@ -2314,6 +2314,7 @@ body {
   margin-top: 90px;
   overflow: clip !important;
   position: relative;
+  height: 90vh;
   z-index: 1;
 }
 .banner-two .shape-one {
@@ -2484,7 +2485,9 @@ body {
 .banner-two .banner-two__content {
   position: relative;
   z-index: 2;
+  left: 30%;
 }
+
 .banner-two .banner-two__content h1,
 .banner-two .banner-two__content p {
   color: var(--white);
@@ -2599,7 +2602,7 @@ body {
 }
 .banner-two .swiper-button-prev img,
 .banner-two .swiper-button-next img {
-  width: 140px;
+  width: 100px;
   height: 70px;
 }
 .banner-two .swiper-button-prev::after,

@@ -253,8 +253,8 @@
             <div class="shape-square d-none d-md-block"></div>
             <div class="shape-tr"></div>
             <div class="shape-sm"></div>
-            <div class="shape-lg"></div>
-            <div class="shape-xl"></div>
+            <!-- <div class="shape-lg"></div>
+            <div class="shape-xl"></div> -->
          </div>
          <div class="banner-two-wrapper">
             <div class="banner-two-slider swiper">
@@ -263,7 +263,7 @@
                      <div class="banner-two__single">
                         <div class="container">
                            <div class="row">
-                              <div class="col-12 col-sm-10 col-md-5 col-lg-5 ">
+                              <div class="col-12 col-sm-10 col-md-8 col-lg-5 ">
                                  <div class="banner-two__content">
                                     <h1>Discover The
                                        Most Suitable
@@ -287,7 +287,7 @@
                      <div class="banner-two__single">
                         <div class="container">
                            <div class="row">
-                              <div class="col-12 col-sm-10 col-md-5 col-lg-5 ">
+                              <div class="col-12 col-sm-10 col-md-8 col-lg-5 ">
                                  <div class="banner-two__content">
                                     <h1>Discover The
                                        Most Suitable
@@ -311,7 +311,7 @@
                      <div class="banner-two__single">
                         <div class="container">
                            <div class="row">
-                              <div class="col-12 col-sm-10 col-md-5 col-lg-5 ">
+                              <div class="col-12 col-sm-10 col-md-8 col-lg-5 ">
                                  <div class="banner-two__content">
                                     <h1>Discover The
                                        Most Suitable
@@ -1151,112 +1151,146 @@
 
 
    <!-- ==== explore section start ==== -->
+   
    <section class="explore">
       <div class="container">
-         <div class="row justify-content-center">
-            <div class="col-12 col-xl-5">
-               <div class="section__header text-center">
-                  <span>Explore</span>
-                  <h2 class="title-animation">Gallery</h2>
-                  <div class="icon-thumb justify-content-center">
-                     <div class="icon-thumb-single">
-                        <span></span>
-                        <span></span>
-                     </div>
-                     <img src="assets/images/emperia/emperia-fav.png" style="max-height: 50px;" alt="Image">
-                     <div class="icon-thumb-single">
-                        <span></span>
-                        <span></span>
-                     </div>
+          <div class="row justify-content-center">
+              <div class="col-12 col-xl-5">
+                  <div class="section__header text-center">
+                      <span>Explore</span>
+                      <h2 class="title-animation">Gallery</h2>
+                      <div class="icon-thumb justify-content-center">
+                          <div class="icon-thumb-single">
+                              <span></span>
+                              <span></span>
+                          </div>
+                          <img src="assets/images/emperia/emperia-fav.png" style="max-height: 50px;" alt="Image" class="filter-img">
+                          <div class="icon-thumb-single">
+                              <span></span>
+                              <span></span>
+                          </div>
+                      </div>
                   </div>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-12">
-               <div class="explore__wrapper">
-                  <div class="explore__single" data-aos="fade-up" data-aos-duration="1200">
-                     <div class="thumb">
-                        <a href="">
-                           <img src="assets/images/thumb/area/area-one.png" alt="Image">
+              </div>
+          </div>
+          
+          <!-- New Filter Section with Header -->
+        
+          
+          <div class="d-flex justify-content-center my-4">
+              <button class="btn btn-secondary me-2" onclick="filterItems('all')">All</button>
+              <button class="btn btn-secondary me-2" onclick="filterItems('images')">Images</button>
+              <button class="btn btn-secondary" onclick="filterItems('videos')">Videos</button>
+          </div>
+  
+          <div class="row">
+              <div class="col-12">
+                  <div class="explore__wrapper" id="gallery">
+                      <!-- Image Item -->
+                      <div class="explore__single g images" onclick="openModal('assets/images/thumb/area/area-one.png')" data-aos="fade-up" data-aos-duration="1200">
+                          <div class="thumb">
+                              <a href="#">
+                                  <img src="assets/images/thumb/area/area-one.png" alt="Image 1">
+                              </a>
+                          </div>
+
+                          
+                          <a href="#" class="arr">
+                              <i class="fa-solid fa-arrow-up"></i>
+                          </a>
+                      </div>
+                      <div class="explore__single g images" onclick="openModal('assets/images/thumb/area/area-one.png')" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="thumb">
+                            <a href="#">
+                                <img src="assets/images/thumb/area/area-one.png" alt="Image 1">
+                            </a>
+                        </div>
+
+                        
+                        <a href="#" class="arr">
+                            <i class="fa-solid fa-arrow-up"></i>
                         </a>
-                     </div>
-                     <a href="" class="arr">
-                        <i class="fa-solid fa-arrow-up"></i>
-                     </a>
-
-                  </div>
-                  <div class="explore__single" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                    </div>
+                    <div class="explore__single g images" onclick="openModal('assets/images/thumb/area/area-one.png')" data-aos="fade-up" data-aos-duration="1200">
                      <div class="thumb">
-                        <a href="">
-                           <img src="assets/images/thumb/area/area-two.png" alt="Image">
-                        </a>
+                         <a href="#">
+                             <img src="assets/images/thumb/area/area-one.png" alt="Image 1">
+                         </a>
                      </div>
-                     <a href="" class="arr">
-                        <i class="fa-solid fa-arrow-up"></i>
-                     </a>
 
+                     
+                     <a href="#" class="arr">
+                         <i class="fa-solid fa-arrow-up"></i>
+                     </a>
+                 </div>
+                 <div class="explore__single g images" onclick="openModal('assets/images/thumb/area/area-one.png')" data-aos="fade-up" data-aos-duration="1200">
+                  <div class="thumb">
+                      <a href="#">
+                          <img src="assets/images/thumb/area/area-one.png" alt="Image 1">
+                      </a>
                   </div>
-                  <div class="explore__single explore__single-tall" data-aos="fade-up" data-aos-duration="1200"
-                     data-aos-delay="400">
-                     <div class="thumb">
-                        <a href="">
-                           <img src="assets/images/thumb/area/area-four.png" alt="Image">
+
+                  
+                  <a href="#" class="arr">
+                      <i class="fa-solid fa-arrow-up"></i>
+                  </a>
+              </div>
+                      <!-- Additional Image and Video Items as needed -->
+                      
+                      <!-- Example Video Item -->
+                      <div class="explore__single g videos" data-aos="" data-aos-duration="1200">
+                          <video class="img-fluid" controls>
+                              <source src="assets/videos/video1.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                          </video>
+                          <a href="#" class="arr">
+                              <i class="fa-solid fa-arrow-up"></i>
+                          </a>
+                      </div>
+
+
+                      <div class="explore__single g videos" data-aos="" data-aos-duration="1200">
+                        <video class="img-fluid" controls>
+                            <source src="assets/videos/video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="#" class="arr">
+                            <i class="fa-solid fa-arrow-up"></i>
                         </a>
-                     </div>
-                     <a href="" class="arr">
-                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+
+
+                    <div class="explore__single g videos" data-aos="" data-aos-duration="1200">
+                     <video class="img-fluid" controls>
+                         <source src="assets/videos/video1.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                     </video>
+                     <a href="#" class="arr">
+                         <i class="fa-solid fa-arrow-up"></i>
                      </a>
-
+                 </div>
+                      
+                      <!-- More gallery items here... -->
                   </div>
-                  <div class="explore__single explore__single-wide" data-aos="fade-up" data-aos-duration="1200"
-                     data-aos-delay="600">
-                     <div class="thumb">
-                        <a href="">
-                           <img src="assets/images/thumb/area/area-three.png" alt="Image">
-                        </a>
-                     </div>
-                     <a href="" class="arr">
-                        <i class="fa-solid fa-arrow-up"></i>
-                     </a>
-
-                  </div>
-                  <div class="explore__single" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                     <div class="thumb">
-                        <a href="">
-                           <img src="assets/images/thumb/area/area-five.png" alt="Image">
-                        </a>
-                     </div>
-                     <a href="" class="arr">
-                        <i class="fa-solid fa-arrow-up"></i>
-                     </a>
-
-                  </div>
-                  <div class="explore__single explore__single-wide" data-aos="fade-up" data-aos-duration="1200"
-                     data-aos-delay="800">
-                     <div class="thumb">
-                        <a href="">
-                           <img src="assets/images/thumb/area/area-six.png" alt="Image">
-                        </a>
-                     </div>
-                     <a href="" class="arr">
-                        <i class="fa-solid fa-arrow-up"></i>
-                     </a>
-
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row align-items-center vertical-column-gap-sm">
-
-            <div class="col-12 ">
-               <div class="text-center">
-                  <a href="gallery.html" class="btn--primary">Explore All</a>
-               </div>
-            </div>
-         </div>
+              </div>
+          </div>
       </div>
-   </section>
+  </section>
+  
+  <!-- Modal for Viewing Image -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                  <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+              </div>
+          </div>
+      </div>
+  </div>
    <!-- ==== / explore section end ==== -->
 
 
@@ -1709,58 +1743,6 @@
    </footer>
    <!-- ==== / footer end ==== -->
 
-   <!-- ==== color switcher start ==== -->
-   <!-- <div class="color-palate">
-            <div class="color-trigger">
-               <i class="fas fa-cog fa-fw"></i>
-            </div>
-            <div class="color-palate-inner">
-               <div class="color-palate-head">
-                  <h6>Choose Options</h6>
-               </div>
-               <div class="various-color clearfix">
-                  <h6>Multiple Colors</h6>
-                  <br>
-                  <div class="colors-list">
-                     <span class="palate blue-color active" data-theme-file="assets/css/blue-theme.css"></span>
-                     <span class="palate default-color" data-theme-file="assets/css/red-theme.css"></span>
-                     <span class="palate brown-color" data-theme-file="assets/css/brown-theme.css"></span>
-                     <span class="palate green-color" data-theme-file="assets/css/green-theme.css"></span>
-                     <span class="palate orange-color" data-theme-file="assets/css/orange-theme.css"></span>
-                     <span class="palate purple-color" data-theme-file="assets/css/purple-theme.css"></span>
-                     <span class="palate teal-color" data-theme-file="assets/css/teal-theme.css"></span>
-                     <span class="palate yellow-color" data-theme-file="assets/css/yellow-theme.css"></span>
-                  </div>
-               </div>
-               <h6>RTL Version</h6>
-               <ul class="rtl-version option-box">
-                  <li class="rtl">RTL Version</li>
-                  <li>LTR Version</li>
-               </ul>
-               <h6>Boxed Version</h6>
-               <ul class="box-version option-box">
-                  <li class="box">Boxed</li>
-                  <li>Full width</li>
-               </ul>
-               <h6>Want Sticky Header</h6>
-               <ul class="header-version option-box">
-                  <li class="box">No</li>
-                  <li>Yes</li>
-               </ul>
-               <h6>Dark Verion</h6>
-               <ul class="dark-version option-box">
-                  <li class="box">Yes</li>
-                  <li>No</li>
-               </ul>
-               <div class="purchase-box">
-                  <p>You will find much more options for colors and styling in admin panel. This color picker is used
-                     only for demonstation purposes.
-                  </p>
-                  <a href="#" class="purchase-box__btn">buy now</a>
-               </div>
-            </div>
-         </div> -->
-   <!-- ==== / color switcher end ==== -->
    <!-- ==== mouse cursor drag start ==== -->
    <div class="mouseCursor cursor-outer"></div>
    <div class="mouseCursor cursor-inner"></div>
@@ -1776,6 +1758,77 @@
    </div>
    <!-- ==== js dependencies start ==== -->
    <!-- jquery -->
+    
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+   <script>
+       function filterItems(category) {
+           const items = document.querySelectorAll('.gallery-item');
+           items.forEach(item => {
+               if (category === 'all' || item.classList.contains(category)) {
+                   item.style.display = 'block';
+               } else {
+                   item.style.display = 'none';
+               }
+           });
+       }
+   
+       function openModal(imageSrc) {
+           const modalImage = document.getElementById('modalImage');
+           modalImage.src = imageSrc;
+           const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+           imageModal.show();
+       }
+   </script>
+
+
+
+
+<script>
+function filterItems(category) {
+ const items = document.querySelectorAll('.explore__single');
+ items.forEach(item => {
+     if (category === 'all' || item.classList.contains(category)) {
+         item.style.display = 'block';
+     } else {
+         item.style.display = 'none';
+     }
+ });
+}
+
+function openModal(imageSrc) {
+ const modalImage = document.getElementById('modalImage');
+ modalImage.src = imageSrc;
+ const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+ imageModal.show();
+}
+</script>
+   
+ 
+
+
+
+
+
+<script>function filterItems(category) {
+const items = document.querySelectorAll('.explore__single');
+const buttons = document.querySelectorAll('.btn-secondary');
+
+// Toggle active class on buttons
+buttons.forEach(btn => btn.classList.remove('active'));
+document.querySelector(`.btn-secondary[onclick="filterItems('${category}')"]`).classList.add('active');
+
+// Filter gallery items based on selected category
+items.forEach(item => {
+ if (category === 'all' || item.classList.contains(category)) {
+     item.style.display = 'block';
+ } else {
+     item.style.display = 'none';
+ }
+});
+}
+</script>
    <script src="assets/js/jquery-3.7.1.min.js"></script>
    <!-- bootstrap five js -->
    <script src="assets/js/bootstrap.bundle.min.js"></script>
