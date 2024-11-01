@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: url('your-blurred-background-image.jpg') no-repeat center center fixed; /* Replace with your background image */
+            background: url('./assets/images/emperia/s1.png') no-repeat center center fixed; /* Replace with your background image */
             background-size: cover;
             overflow: hidden;
             height: 100vh;
@@ -39,58 +39,58 @@
             animation-delay: 0.5s; /* Delay for favicon */
         }
         .favicon {
-            width: 80px; /* Adjust size as needed */
-            height: 80px; /* Keep it square for rotation */
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Keep it square for rotation */
             animation: rotate 2s infinite; /* Rotate animation */
         }
         @keyframes rotate {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        h1 {
-            font-size: 36px;
+        .text-container {
+            display: flex;
+            gap: 10px;
+            font-size: 45px;
             color: orange;
-            margin: 20px 0 0; /* Space above the text */
-            opacity: 0; /* Initially hidden for animation */
-            animation: fadeIn 1s forwards; /* Fade-in animation */
-            animation-delay: 2s; /* Show after favicon */
-            transform: translateZ(0); /* Create a 3D effect */
+            font-weight: bold;
         }
-        p {
-            font-size: 18px;
-            color: #ffcc00; /* Lighter shade of orange */
-            opacity: 0; /* Initially hidden for animation */
-            animation: fadeIn 1s forwards; /* Fade-in animation */
-            animation-delay: 2.5s; /* Show after heading */
-            transform: translateZ(0); /* Create a 3D effect */
+        .text-container span {
+            opacity: 0;
+            transform: translateY(20px);
+            display: inline-block;
+            animation: wordFade 0.5s forwards;
+            font-size: 40px;
+            letter-spacing: 4px;
+  color: #f1ebe5;
+  text-shadow: 0 1px 0 #ccc;
+  margin: 15PX 0PX 0PX;
         }
-        .button {
-            padding: 10px 20px;
-            background-color: orange;
-            color: black;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s, transform 0.3s; /* Button hover effect */
-            opacity: 0; /* Initially hidden for animation */
-            animation: fadeIn 1s forwards; /* Fade-in animation */
-            animation-delay: 3s; /* Show after text */
-        }
-        .button:hover {
-            background-color: #ffcc00; /* Lighter shade on hover */
-            transform: scale(1.1); /* Scale effect on hover */
+        /* Delay each word's animation */
+        .text-container span:nth-child(1) { animation-delay: 2s; }
+        .text-container span:nth-child(2) { animation-delay: 2.5s; }
+        .text-container span:nth-child(3) { animation-delay: 3s; }
+
+        /* Fade in and slide up effect for each word */
+        @keyframes wordFade {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        /* Animation keyframes */
+        /* Main fade-in animation */
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(-20px); /* Start slightly above */
+                transform: translateY(-20px);
             }
             to {
                 opacity: 1;
-                transform: translateY(0); /* End at normal position */
+                transform: translateY(0);
             }
         }
     </style>
@@ -98,17 +98,20 @@
 <body>
     <div class="overlay">
         <div class="favicon-container">
-            <img class="favicon" src="assets/images/emperia/emperia-fav.png" alt="Favicon"> <!-- Replace with your favicon -->
+            <img class="favicon" src="assets/images/emperia/emperia-fav.png" alt="Favicon">
         </div>
-        <h1>Welcome to Emperia Group</h1>
-        <p>Transforming Dreams into Reality</p>
-        <button class="button" onclick="window.location.href='your-website-url.com'">Explore More</button>
+        <!-- Display each word with animation -->
+        <div class="text-container">
+            <span>Welcome</span>
+            <span>to</span>
+            <span>Emperia</span>
+        </div>
     </div>
 
     <script>
-        // Redirect after a 2-second wait
+        // Redirect after a 2-second wait after the animation completes
         setTimeout(function() {
-            window.location.href = 'your-website-url.com'; // Replace with your actual website URL
+            window.location.href = 'index.html'; // Replace with your actual website URL
         }, 6000); // 6000 milliseconds = 6 seconds (4 seconds for animations + 2 seconds wait)
     </script>
 </body>
